@@ -21,6 +21,8 @@ entre ellos. Para conseguir esto, los subsistemas se conectarán entre si median
 
 Este proyecto Django estará dividido en apps (subsistemas y proyecto base), donde cualquier app podrá ser reemplazada individualmente.
 
+MODIFICACION
+
 Gateway
 -------
 
