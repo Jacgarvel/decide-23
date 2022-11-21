@@ -1,2 +1,3 @@
 Esto es un txt con un cambio para esta rama
 Esta linea se va a insertar con un merge
+Esta linea no causa conflictos master
