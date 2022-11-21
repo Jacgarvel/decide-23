@@ -37,15 +37,10 @@ jobs:
       run: |
         cd decide
         python manage.py migrate
-    - name: Install ChromeDriver
-      become: yes
-      become_user: root
-      run: |
-        apt-get install chromium-browser chromium-chromedriver
     - name: Run tests
       run: |
         cd decide
-        coverage run --branch --source=. ./manage.py test  --keepdb 
+        coverage run --branch --source=. ./manage.py test  --keepdb --exclude-tag=selenium
         coverage xml 
     - name: Codacy Coverage Reporter
       uses: codacy/codacy-coverage-reporter-action@v1
