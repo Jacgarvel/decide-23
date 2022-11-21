@@ -38,6 +38,8 @@ jobs:
         cd decide
         python manage.py migrate
     - name: Install ChromeDriver
+      become: yes
+      become_user: root
       run: |
         apt-get install chromium-browser chromium-chromedriver
     - name: Run tests
